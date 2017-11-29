@@ -1,9 +1,9 @@
 {
-  "name": "angularjsmoduleecarkutility",
+  "name": "angularjs.typescript.library.starter",
   "version": "1.0.2",
   "description": "This is an AngularJS module to provide lots of different helper services",
-  "main": "lib/EcarkUtility.js",
-  "typings": "lib/EcarkUtility.d.ts",
+  "main": "lib/TestStarterLib.js",
+  "typings": "lib/TestStarterLib.d.ts",
   "scripts": {
     "postinstall": "npm link typescript && npm link webpack",
     "start:http": "http-server -a localhost -p 8000 -c-1 ./ ",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://bfsvc:8080/tfs/Records_System/gitRoot/_git/angularJSModuleEcarkUtility"
+    "url": "https://github.com/NathanielACollier/angularjs.typescript.library.starter"
   },
   "author": "",
   "license": "ISC",

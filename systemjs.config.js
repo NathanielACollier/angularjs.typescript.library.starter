@@ -23,7 +23,7 @@
         // map tells the System loader where to look for things
         map: {
             testApp: 'dist/testWeb', // app is within dist folder when it gets compiled
-            "EcarkUtility": 'lib/EcarkUtility.js', // library with angular module is here
+            "TestStarterLib": 'lib/TestStarterLib.js', // library with angular module is here
             'angular':        'npm:angular/angular.js',
             'angular-route':  'npm:angular-route/angular-route.js',
             "tslib":"npm:tslib/tslib.js"

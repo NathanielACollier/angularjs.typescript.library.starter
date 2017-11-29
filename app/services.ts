@@ -1,7 +1,7 @@
 
 
 export class General{
-    public static readonly angularName = "EcarkUtilityGeneral";
+    public static readonly angularName = "General";
 
     static $inject = [];
 
