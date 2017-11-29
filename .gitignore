@@ -1,0 +1,6 @@
+node_modules/
+#ignore compiled tests
+dist/
+# we need the compiled library javascript so we can use npm install --save git+http://bfsvc:8080/tfs/gitRepoPathForThis
+
+# we also want to do npm update <package name> if we change the version in package.json

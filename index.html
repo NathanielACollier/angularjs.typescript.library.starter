@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script>
+            System.import('systemjs.config.js')
+              .then(function () { System.import('testApp') })
+              .catch(console.error.bind(console));
+          </script>
+
+    </head>
+    <body>
+        <ul>Main Menu
+            <li>Services
+                <ul>
+                    <li>
+                        General
+                        <ul>
+                            <li><a href="#/serviceTestGeneral001">Test 001 - Hello World</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <ng-view></ng-view>
+    </body>
+</html>

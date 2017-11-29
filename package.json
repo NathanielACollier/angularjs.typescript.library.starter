@@ -1,0 +1,36 @@
+{
+  "name": "angularjsmoduleecarkutility",
+  "version": "1.0.2",
+  "description": "This is an AngularJS module to provide lots of different helper services",
+  "main": "lib/EcarkUtility.js",
+  "typings": "lib/EcarkUtility.d.ts",
+  "scripts": {
+    "postinstall": "npm link typescript && npm link webpack",
+    "start:http": "http-server -a localhost -p 8000 -c-1 ./ ",
+    "build:lib": "webpack --config webpack.buildLib.config --watch",
+    "build:lib2": "tsc -p ./app/tsconfig.json",
+    "build:testWeb": "tsc -p ./test/tsconfig.json ",
+    "//": "On a unix environment you wouldn't be able to use start see: https://stackoverflow.com/questions/30950032/how-can-i-run-multiple-npm-scripts-in-parallel",
+    "start": "start npm run build:lib && start npm run build:testWeb && start npm run start:http"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://bfsvc:8080/tfs/Records_System/gitRoot/_git/angularJSModuleEcarkUtility"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "es6-shim": "^0.35.3",
+    "systemjs": "^0.20.12",
+    "@types/angular-route": "^1.3.3",
+    "angular-route": "^1.6.4",
+    "ts-loader": "^2.3.7",
+    "dts-bundle": "^0.7.3"
+  },
+  "dependencies": {
+    "@types/angular": "^1.6.17",
+    "angular": "^1.6.3",
+    "tslib": "^1.8.0"
+  }
+}

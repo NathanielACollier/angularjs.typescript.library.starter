@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "lib": [ "es2015", "dom" ],
+      "outDir": "../dist/testWeb",
+      "watch": true,
+      "noEmitHelpers": true,
+      "importHelpers": true,
+      "baseUrl":".",
+      "paths":{
+          "EcarkUtility": ["../lib/EcarkUtility"]
+      }
+    }
+    ,
+    "include": [
+        "../test/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+  }
